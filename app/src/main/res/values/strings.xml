@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">snapdocs.</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="title_headline">Scan, Save &amp; Share.</string>
+    <string name="subtitle_headline">Capture documents in seconds with crystal clarity. Store or share instantly - all in one place</string>
+    <string name="btn_label_headline">Get Started</string>
+
+    <string name="no_docs_available">Looks a little empty in here.\nLet\'s scan your first document!</string>
+    <string name="btn_lable_scan_document">Scan Document</string>
+</resources>

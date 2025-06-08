@@ -1,0 +1,60 @@
+[versions]
+coilCompose = "3.0.0"
+hiltAndroid = "2.51.1"
+ktx = "1.15.0"
+appCompat = "1.6.1"
+material = "1.12.0"
+junit = "4.13.2"
+androidXjunit = "1.2.1"
+espresso = "3.6.1"
+
+mlkitDocumentScanner = "16.0.0-beta1"
+kotlin = "2.0.21"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2024.09.00"
+navigationCompose = "2.8.9"
+playServicesAds = "24.1.0"
+roomCompiler = "2.6.1"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+
+pdfium-android = "1.5.0"
+
+[libraries]
+androidx-ktx = {module = "androidx.core:core-ktx", version.ref = "ktx"}
+androidx-appCompat = {module = "androidx.appcompat:appcompat", version.ref = "appCompat"}
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+material = {module = "com.google.android.material:material", version.ref = "material"}
+
+mlkit-document-scanner = {module = "com.google.android.gms:play-services-mlkit-document-scanner", version.ref="mlkitDocumentScanner"}
+
+junit = {module = "junit:junit", version.ref = "junit"}
+androidx-junit = {module = "androidx.test.ext:junit", version.ref = "androidXjunit"}
+espresso = {module = "androidx.test.espresso:espresso-core", version.ref = "espresso"}
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+
+pdfium-android = { group = "com.github.barteksc", name = "pdfium-android", version.ref = "pdfium-android" }
+
+
+[plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
