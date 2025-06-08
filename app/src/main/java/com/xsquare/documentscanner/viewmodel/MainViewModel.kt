@@ -59,4 +59,8 @@ class MainViewModel @Inject constructor(
 
     }
 
+    suspend fun getDocument(id: Long): Document? {
+        return repository.getDocument(id)
+    }
+
 }

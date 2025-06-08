@@ -20,4 +20,8 @@ class LocalDataSource @Inject constructor(
         return documentDao.fetchAll()
     }
 
+    suspend fun fetchById(id: Long): Document? {
+        return documentDao.fetchById(id)
+    }
+
 }

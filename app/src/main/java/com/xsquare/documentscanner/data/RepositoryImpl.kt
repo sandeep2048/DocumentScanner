@@ -19,4 +19,8 @@ class RepositoryImpl @Inject constructor(
         return localDataSource.fetchAll()
     }
 
+    override suspend fun getDocument(id: Long): Document? {
+        return localDataSource.fetchById(id)
+    }
+
 }

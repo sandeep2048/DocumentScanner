@@ -19,4 +19,7 @@ abstract class DocumentDao {
     @Query("SELECT * FROM document")
     abstract suspend fun fetchAll(): List<Document>
 
+    @Query("SELECT * FROM document WHERE id = :id LIMIT 1")
+    abstract suspend fun fetchById(id: Long): Document?
+
 }

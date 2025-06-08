@@ -61,6 +61,7 @@ import com.xsquare.documentscanner.ui.components.IconButton
 import com.xsquare.documentscanner.ui.components.ListItem
 import com.xsquare.documentscanner.ui.components.SearchBar
 import com.xsquare.documentscanner.utils.LocalActivity
+import com.xsquare.documentscanner.utils.LocalNavController
 import com.xsquare.documentscanner.utils.timestampToDate
 import com.xsquare.documentscanner.viewmodel.DocState
 import com.xsquare.documentscanner.viewmodel.MainViewModel
@@ -76,6 +77,7 @@ fun DocumentScreen(
     viewModel: MainViewModel
 ) {
     val activity = LocalActivity.current
+    val navController = LocalNavController.current
 
     var launchDocSettingsModal by remember {
         mutableStateOf(false)
@@ -250,7 +252,13 @@ private fun ColumnScope.DocsList(
             horizontalArrangement = Arrangement.spacedBy(12.dp)
         ){
             items(count = documents.size) { idx ->
-                DocumentCard(documents[idx], onDocSettingsClick)
+                DocumentCard(
+                    document = documents[idx],
+                    onDocClick = { doc ->
+                        navController.navigate(Screen.PdfViewer.route + "/${doc.id}")
+                    },
+                    onDocSettingsClick = onDocSettingsClick
+                )
             }
         }
     }
