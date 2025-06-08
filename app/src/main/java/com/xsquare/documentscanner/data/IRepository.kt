@@ -11,4 +11,6 @@ interface IRepository {
 
     suspend fun getDocuments(): List<Document>
 
+    suspend fun getDocument(id: Long): Document?
+
 }

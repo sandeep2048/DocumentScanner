@@ -32,13 +32,18 @@ import com.xsquare.documentscanner.utils.timestampToDate
  */
 
 @Composable
-fun DocumentCard(document: Document, onDocSettingsClick: (Document) -> Unit) {
+fun DocumentCard(
+    document: Document,
+    onDocClick: (Document) -> Unit,
+    onDocSettingsClick: (Document) -> Unit
+) {
     Column {
         Card(
             shape = RoundedCornerShape(8.dp),
             colors = CardDefaults.cardColors(
                 containerColor = MaterialTheme.colorScheme.surface
-            )
+            ),
+            modifier = Modifier.clickable { onDocClick(document) }
         ) {
             DocumentCardPreview(document)
             DocumentCardDetails(document, onDocSettingsClick)

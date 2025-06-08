@@ -20,6 +20,7 @@ roomKtx = "2.6.1"
 roomRuntime = "2.6.1"
 
 pdfium-android = "1.5.0"
+androidPdfViewer = "3.2.0-beta.1"
 
 [libraries]
 androidx-ktx = {module = "androidx.core:core-ktx", version.ref = "ktx"}
@@ -52,6 +53,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
 
 pdfium-android = { group = "com.github.barteksc", name = "pdfium-android", version.ref = "pdfium-android" }
+androidPdfViewerLib = { group = "com.github.barteksc", name = "android-pdf-viewer", version.ref = "androidPdfViewer" }
 
 
 [plugins]
